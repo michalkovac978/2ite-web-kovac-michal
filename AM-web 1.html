@@ -1,26 +1,100 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arthur Morgan</title>
   <meta name="description" content="Arthur Morgan">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: Georgia, serif; background-color: #0f0f0f; color: #e4e4e4; }
-    .hero { position: relative; height: 100vh; display: grid; place-content: center; text-align: center; color: #e4e4e4; background-image: url("https://images7.alphacoders.com/136/thumb-1920-1363449.png"); background-size: cover; background-position: center; background-repeat: no-repeat; }
-    .overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.6); }
-    .hero h1 { position: relative; z-index: 1; font-size: clamp(3rem, 6vw, 6rem); letter-spacing: 2px; }
-    .content { padding: 0; }
-    .content section { padding: 6rem 10%; }
-    h2 { border-bottom: 2px solid #8b5a2b; display: inline-block; margin-bottom: 1rem; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
-    .skill-card { border: 1px solid #8b5a2b; padding: 1.5rem; border-radius: 8px; text-align: left; background-color: rgba(0,0,0,0.2); }
-    .skill-card h3 { margin-top: 0; margin-bottom: 0.5rem; color: #f0c27b; }
-    .skill-card p { margin: 0; font-size: 0.9rem; line-height: 1.4; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "PT Serif";
+      background-color: #0f0f0f;
+      color: #e4e4e4;
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      display: grid;
+      place-content: center;
+      text-align: center;
+      color: #e4e4e4;
+      background-image: url("https://images7.alphacoders.com/136/thumb-1920-1363449.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .hero h1 {
+      position: relative;
+      z-index: 1;
+      font-size: clamp(3rem, 6vw, 6rem);
+      letter-spacing: 2px;
+    }
+
+    .content {
+      padding: 0;
+    }
+
+    .content section {
+      padding: 6rem 10%;
+    }
+
+    h2 {
+      border-bottom: 2px solid #7a0000;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .skill-card {
+      border: 1px solid #af2828;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: left;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .skill-card h3 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      color: #c03434;
+    }
+
+    .skill-card p {
+      margin: 0;
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
   </style>
 </head>
+
 <body>
   <header class="hero">
     <div class="overlay"></div>
@@ -31,10 +105,15 @@
     <section>
       <h2>Kdo byl</h2>
       <p>
-        Arthur Morgan je hlavní postava ve hře Red Dead Redemption 2. Je zkušený kovboj a člen gangu Van der Linde. Je tvrdý a nebojácný, ale zároveň má své morální zásady a dokáže být věrný lidem, na kterých mu záleží.
-    Hráč si ve hře může vybrat, jestli bude Arthur spíše hodný nebo zlý, a tyto volby ovlivňují, jak příběh dopadne. 
-    Arthur má charakteristický vzhled – nosí klobouk, vestu a koženou bundu. Jeho vousy a vlasy se postupně mění podle toho, jak se o něj hráč stará.
-    Co dělá Arthura tak zajímavým, je právě kombinace tvrdého života na Divokém západě a jeho vnitřní hloubky. Ukazuje, že i někdo, kdo je „zločinec“, může být lidský a prožívat morální dilemata.
+        Arthur Morgan je hlavní postava ve hře Red Dead Redemption 2. Je zkušený kovboj a člen gangu Van der
+        Linde. Je tvrdý a nebojácný, ale zároveň má své morální zásady a dokáže být věrný lidem, na kterých mu
+        záleží.
+        Hráč si ve hře může vybrat, jestli bude Arthur spíše hodný nebo zlý, a tyto volby ovlivňují, jak příběh
+        dopadne.
+        Arthur má charakteristický vzhled – nosí klobouk, vestu a koženou bundu. Jeho vousy a vlasy se postupně
+        mění podle toho, jak se o něj hráč stará.
+        Co dělá Arthura tak zajímavým, je právě kombinace tvrdého života na Divokém západě a jeho vnitřní
+        hloubky. Ukazuje, že i někdo, kdo je „zločinec“, může být lidský a prožívat morální dilemata.
       </p>
     </section>
 
@@ -43,15 +122,18 @@
       <div class="grid">
         <div class="skill-card">
           <h3>Lojalita</h3>
-          <p>Arthur je věrný členům gangu a těm, na kterých mu záleží. I když se okolnosti mění, drží slovo a podporuje své přátele.</p>
+          <p>Arthur je věrný členům gangu a těm, na kterých mu záleží. I když se okolnosti mění, drží slovo a
+            podporuje své přátele.</p>
         </div>
         <div class="skill-card">
           <h3>Odpovědnost</h3>
-          <p>Ve svých činech nese důsledky. Snaží se jednat správně, i když život na divokém západě není jednoduchý a často vyžaduje kompromisy.</p>
+          <p>Ve svých činech nese důsledky. Snaží se jednat správně, i když život na divokém západě není
+            jednoduchý a často vyžaduje kompromisy.</p>
         </div>
         <div class="skill-card">
           <h3>Respekt k nevinným</h3>
-          <p>Nikdy neubližuje bezdůvodně slabším nebo nevinným lidem. I jako zločinec má svůj morální kompas, který ho vede k ochraně těch, kteří se nemohou bránit.</p>
+          <p>Nikdy neubližuje bezdůvodně slabším nebo nevinným lidem. I jako zločinec má svůj morální kompas,
+            který ho vede k ochraně těch, kteří se nemohou bránit.</p>
         </div>
       </div>
     </section>
@@ -87,4 +169,5 @@
     gsap.from(".hero h1", { opacity: 0, y: 60, duration: 1.2 });
   </script>
 </body>
+
 </html>
